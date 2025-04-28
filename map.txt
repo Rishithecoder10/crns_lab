@@ -1,0 +1,11 @@
+Task	Command
+Ping Scan	nmap -sn 192.168.1.0/24
+Full TCP Scan	nmap -p- 192.168.1.10
+Version Detection	nmap -sV -p 22,80,443 192.168.1.10
+OS Detection	nmap -O 192.168.1.10
+External Website Scan	nmap -sV example.com
+Scan 8000–9000 ports	nmap -p 8000-9000 192.168.1.10
+Open/Closed/Filtered Detection	nmap -sS -sV 192.168.1.10
+Skip Ping Scan	nmap -Pn 192.168.1.15
+Stealth Scan	nmap -sS 192.168.1.10
+Remote Access Ports Scan	nmap -p 22,23 192.168.1.10
